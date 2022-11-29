@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ろくまる農園2022</title>
+    <title>ろくまる農園masterです</title>
 </head>
 
 <body>
