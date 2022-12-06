@@ -3,8 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>ろくまる農園ver2</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    <body id="list">
+        <h1>スタッフ一覧</h1>
+        <main>
+        <form method="post" action="staff_edit.php" class="waku">
+        <table class="haba2">
+            <tr><th>登録名</th></tr>
         <?php
         try {
             $dsn = "mysql:dbname=shop;host=localhost;charset=utf8";
@@ -19,28 +25,30 @@
     
             $dbh = null;
     
-            print "スタッフ一覧<br /><br />\n";
-
-            print '<form method="post" action="staff_edit.php">' ."\n";
             while(true) {
                 $rec = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($rec == false) {
                     break;
                 }
-                print '<input type="radio" name="staffcode" value="' .$rec["code"] .'">';
+                print "<tr>\n";
+                print "  <td>";
+                print '<label><input type="radio" name="staffcode" value="' .$rec["code"] .'">';
                 print $rec["name"];
-                print "<br />\n";
+                print "</label></td>\n";
+                print "</tr>\n";
             }
-            print '<button type="submit">参照</button>' ."\n";
-            print '<button type="submit">追加</button>' ."\n";
-            print '<button type="submit">修正</button>' ."\n";
-            print '<button type="submit">削除</button>' ."\n";
-            print "</form>\n";
         } catch(Exception $e) {
             print "ただいま障害により大変ご迷惑をおかけしております。";
             print "<br>" .$e->getMessage();
             exit();
         }
     ?>
+    </table>
+    <button class="button1" type="submit">参照</button>
+    <button class="button2" type="submit">追加</button>
+    <button class="button2" type="submit">修正</button>
+    <button class="button2" type="submit">削除</button>
+    </form>
+    </main>
     </body>
 </html>
