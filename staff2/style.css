@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    background-color: #eeffff;
+    color: #333333;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    background-color:#552a2a;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.waku {
+    padding: 10px;
+}
+
+main{
+    padding-left: 20px;
+}
+.waku2 {
+    display: inline-block;
+    border-bottom: solid 1px #000000;
+    width: 50px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #ffffff;
+}
+
+.head1 {
+    font-size: 1.2em;
+}
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: solid 1px #f5caca;
+    padding: 5px;
+    background-color: #ffffff;
+}
+th {
+    background-color: #f5caca;
+    color: #006666;
+}
+
+.button1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.button2 {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.haba1 {
+    width: 100px;
+}
+.haba2 {
+    width: 200px;
+
+}
+.haba3 {
+    width: 300px;
+}
+
+.fuseru {
+    background-color: #eeeeee;
+}
+
+.colred {
+    color: #ff3333;
+}
+
+.buttonx {
+    display: inline-block;
+    text-align: center;
+    background-color: #eeeeee;
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px #666666;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color : #333333;
+}
