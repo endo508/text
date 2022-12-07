@@ -64,8 +64,10 @@
         print '<input type="hidden" name="code" value="' .$staff_code .'">';
         print '<input type="hidden" name="name" value="' .$staff_name .'">';
         print '<input type="hidden" name="pass" value="' .$staff_pass .'">';
-        print '<button class="button1" type="button" onclick="history.back()">戻る</button>';
+        print '<div class="buttons">';
+        print '<button type="button" onclick="history.back()">戻る</button>';
         print '<button class="button2" type="submit">ＯＫ</button>';
+        print "</div>";
         print "</form>";
     }
 ?>
