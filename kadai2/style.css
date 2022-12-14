@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+* {
+    font-family: "Hiragino Kaku Gothic Pro", "Meiryo", "Osaka", "MS PGothic", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    background-color:#335533;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+body {
+    font-size: 14px;
+    background-color: #eeffff;
+    color: #333333;
+}
+
+main {
+    margin-left: 100px;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: solid 1px #cccccc;
+}
+
+th, td {
+    padding: 10px;
+}
+.samnail {
+    height: 50px;
+}
+
+.buttons {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.button1 {
+    margin-left: 5px;
+}
+
+.width1 {
+    width: 300px;
+}
+
+.width2 {
+    max-width: 600px;
+}
+.height1 {
+    height: 100px;
+}
+
+.colred {
+    color: #ff3333;
+}
+
+.buttonx {
+    display: inline-block;
+    text-align: center;
+    background-color: #eeeeee;
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px #666666;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color : #333333;
+}
+
+.margin1 {
+    margin-left: 2em;
+}
